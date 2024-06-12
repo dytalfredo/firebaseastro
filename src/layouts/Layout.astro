@@ -1,0 +1,182 @@
+---
+import Header from "../components/Header.astro";
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+import "@fontsource-variable/dm-sans";
+import "@fontsource-variable/playfair-display";
+
+import Footer from "../components/Footer.astro";
+import Adverten from "../components/Adverten.astro";
+---
+
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>{title}</title>
+		<meta
+			name="description"
+			content="La mejor experiencia de la mano del mejor asesoramiento y las mejores instituciones"
+		/>
+		<meta name="viewport" content="width=device-width" />
+
+		<meta name="theme-color" content="#09f" />
+		<!-- <link rel="canonical" href="https://paletasdehelado.com" />
+		<link rel="robots" href="https://paletasdehelado.com/robots.txt" /> -->
+		<meta name="robots" content="noindex" />
+
+		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+		<!-- 	
+		<meta property="og:url" content="https://paletasdehelado.com/" />
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:title"
+			content="Maquinaria y Capacitación para fabricar paletas de helado"
+		/>
+		<meta
+			property="og:description"
+			content="Somos fabricantes de equipos de refrigeración en acero inoxidable y dueños de heladerias. Aprovecha está oportunidad y empieza en el mundo de la paleteria. ¡Te ayudaremos!"
+		/>
+		<meta
+			property="og:image"
+			content="https://paletasdehelado.com/opengraphimg4.jpg"
+		/>
+		<meta property="og:image:alt" content="Máquinas de helado" />
+		<meta property="og:image:width" content="400" />
+		<meta property="og:image:height" content="400" />
+
+	
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta property="twitter:domain" content="paletasdehelado.com" />
+		<meta property="twitter:url" content="https://paletasdehelado.com/" />
+		<meta
+			name="twitter:title"
+			content="Maquinaria y Capacitación para fabricar paletas de helado"
+		/>
+		<meta
+			name="twitter:description"
+			content="Somos fabricantes de equipos de refrigeración en acero inoxidable y dueños de heladerias. Aprovecha está oportunidad y empieza en el mundo de la paleteria. ¡Te ayudaremos!"
+		/>
+		<meta
+			name="twitter:image"
+			content="https://res.opengraph.xyz/6064b869-74ed-4eb9-b76c-0b701ffe7e6b/v1/paletasdehelado.com/Maquinas%20y%20Capacitaci%C3%B3n%20para%20fabricar%20paletas%20de%20helado/https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fdocuments%2Fe9bb7daa-e10a-4136-a98b-b5c05690c759.jpg%3Ftoken%3Dox571NCZ1xYPaIhrP2yUYWdhqET633TqbflA5cxx9EU%26height%3D800%26width%3D1200%26expires%3D33239726650/og.png"
+		/>
+		<meta property="twitter:image:alt" content="Máquinas de helado" /> -->
+	</head>
+	<body>
+		<Adverten />
+		<Header />
+
+		<slot />
+		<Footer />
+	</body>
+</html>
+
+<style is:global>
+	:root {
+	}
+
+	a {
+		text-decoration: none;
+	}
+	/*
+  1. Use a more-intuitive box-sizing model.
+*/
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+	/*
+  2. Remove default margin
+*/
+	* {
+		margin: 0;
+	}
+	/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+	body {
+		line-height: 1.5;
+		-webkit-font-smoothing: antialiased;
+	}
+	/*
+  5. Improve media defaults
+*/
+	img,
+	picture,
+	video,
+	canvas,
+	svg {
+		display: block;
+		max-width: 100%;
+	}
+	/*
+  6. Remove built-in form typography styles
+*/
+	input,
+	button,
+	textarea,
+	select {
+		font: inherit;
+	}
+	/*
+  7. Avoid text overflows
+*/
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		overflow-wrap: break-word;
+	}
+	/*
+  8. Create a root stacking context
+*/
+	#root,
+	#__next {
+		isolation: isolate;
+	}
+	html {
+		font-family: "DM Sans Variable", sans-serif;
+		background: var(--whiteBlue);
+		scroll-behavior: smooth;
+	}
+	body {
+		position: relative;
+		overflow-x: hidden;
+		background-color: white;
+		transition: all 0.3s ease-out;
+	}
+
+	/* TEXTOS */
+	h1,
+	h2 {
+		font-weight: 800;
+
+		color: var(--whiteBlue);
+	}
+	h2 {
+		color: var(--black);
+		font-size: 2rem;
+		font-family: "Playfair Display Variable", serif;
+		text-align: center;
+	}
+	h1 {
+		font-size: 2rem;
+	}
+	@media (min-width: 600px) {
+		body {
+		}
+	}
+
+	/*responsive*/
+</style>

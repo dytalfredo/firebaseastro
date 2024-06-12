@@ -1,0 +1,225 @@
+---
+import Numberstep from "./Numberstep.astro";
+import Buttons from "./Buttons.astro";
+---
+
+<div class="relative pt-6">
+    <h2
+        class="mt-28 mb-4 text-5xl py-4 font-semibold text-lime-50 bg-lime-900 border-solid border-4 border-lime-900 capitalize"
+    >
+        Pasos para cumplir tus sueños
+    </h2>
+    <p class="text-xl text-gray-700 text-center max-w-2xl mx-auto">
+        Conoce los 5 pasos a seguir para hacer realidad tus sueño de estudiar y
+        trabajar en el extrangero.
+    </p>
+
+    <div class="flex items-center justify-center mt-2 pt-10 pb-10">
+        <div
+            class="grid h-full w-5/6 gap-2 p-2 grid-cols-3 grid-rows-3 rounded-lg shadow-md"
+        >
+            <div
+                class="relative col-span-1 bg-cover bg-center bento1 row-span-1 bg-pink-200 rounded-lg shadow-md p-4 overflow-hidden"
+            >
+                <Numberstep number="1" , preposition="er" />
+                <div
+                    class="backdrop-filter backdrop-blur-md bg-black/30 rounded p-4 shadow-lg"
+                >
+                    <h3
+                        class="font-bold text-pretty text-lime-50 text-2xl text-right pb-3"
+                    >
+                        Mensaje inicial
+                    </h3>
+                    <p class="pt-3 text-center text-pretty text-white text-md">
+                        <strong>El primer paso es enviarnos un correo.</strong> Comparta
+                        con nosotros su destino de interés y, con gusto, <strong
+                            >nos comunicaremos para ofrecerle nuestra asistencia
+                            personalizada sin costo alguno.</strong
+                        >
+                    </p>
+                    <Buttons title="Contactar" />
+                </div>
+            </div>
+
+            <div
+                class="col-span-2 relative bento2 row-span-1 bg-lime-900 rounded-lg shadow-md items-center justify-center p-4 overflow-hidden"
+            >
+                <Numberstep number="2" , preposition="do" />
+                <div class="flex rounded shadow-lg h-full relative">
+                    <!-- Imagen -->
+                    <div class="w-1/3 h-full">
+                        <img
+                            src="2.jpg"
+                            alt="Segundo paso de como obtener visa estudiantil"
+                            class="object-cover w-full rounded-l h-full"
+                        />
+                    </div>
+
+                    <!-- Texto -->
+                    <div class="w-2/3 p-4 backgroundCircle relative z-10">
+                        <h3
+                            class="font-bold text-pretty text-lime-50 text-2xl text-left pb-3"
+                        >
+                            Asesoramiento y matricula
+                        </h3>
+                        <p
+                            class="pt-3 text-center text-pretty text-white text-md"
+                        >
+                            Un asesor se comunicará contigo para colaborar en la
+                            <strong>creación de un plan personalizado.</strong> Juntos
+                            explorarán opciones para encontrar la ciudad de tu preferencia
+                            y <strong
+                                >el curso que se ajuste a tus intereses y metas
+                                profesionales,</strong
+                            > siempre considerando el tiempo que deseas vivir esta
+                            experiencia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="col-span-2 relative bento3 row-span-1 bg-lime-900 rounded-lg shadow-md items-center justify-center p-4 overflow-hidden"
+            >
+                <Numberstep number="3" , preposition="er" />
+                <div class="flex rounded shadow-lg h-full relative">
+                    <!-- Imagen -->
+                    <div class="w-7/12 p-4 relative z-10">
+                        <h3
+                            class="font-bold text-pretty text-lime-50 text-2xl text-right pb-3"
+                        >
+                            Seleccion de visa
+                        </h3>
+                        <p
+                            class="pt-3 text-center text-white text-md text-pretty"
+                        >
+                            Nos comprometemos en <strong
+                                >facilitar el proceso de selección del visado</strong
+                            > más adecuado para tus aspiraciones. Nos ocuparemos
+                            de gestionar meticulosamente cada paso necesario, siempre
+                            al margen de la ley, <strong
+                                >permitiéndote enfocarte en aspectos más
+                                placenteros de tu aventura.</strong
+                            >
+                        </p>
+                    </div>
+                    <div class="w-5/12 h-full">
+                        <img
+                            src="3.jpg"
+                            alt="Segundo paso de como obtener visa estudiantil"
+                            class="object-cover w-full rounded-l h-full"
+                        />
+                    </div>
+
+                    <!-- Texto -->
+                </div>
+            </div>
+
+            <div
+                class="overflow-hidden col-span-1 relative row-span-2 bg-tan-200 rounded-lg shadow-md flex items-center justify-start bg-cover bg-center bento5 p-4"
+            >
+                <Numberstep number="5" , preposition="o" />
+                <div
+                    class="backdrop-filter backdrop-blur-md bg-black/50 rounded p-4 shadow-lg"
+                >
+                    <h3
+                        class="font-bold text-pretty text-lime-50 text-2xl text-right pb-3"
+                    >
+                        Juntos hasta el final
+                    </h3>
+                    <p class="pt-3 text-center text-pretty text-white text-md">
+                        En Latam Study Visa entendemos que participar en un
+                        programa de intercambio estudiantil representa <strong
+                            >un hito significativo en el crecimiento individual
+                            y la carrera de nuestros clientes.</strong
+                        >
+                        Por ello, brindamos asesoramiento continuo desde el inicio
+                        hasta la conclusión de su viaje educativo, <strong
+                            >asegurándonos de satisfacer todas sus expectativas
+                            y requerimientos.</strong
+                        >
+                    </p>
+                </div>
+            </div>
+            <div
+                class="col-span-2 relative bento4 row-span-1 bg-cyan-900 rounded-lg shadow-md items-center justify-center p-4 overflow-hidden"
+            >
+                <Numberstep number="4" , preposition="o" />
+                <div class="flex rounded shadow-lg h-full relative">
+                    <!-- Imagen -->
+                    <div class="w-2/3 p-4 relative z-10 backgroundCircle2">
+                        <h3
+                            class="font-bold text-pretty text-lime-50 text-2xl text-right pb-3"
+                        >
+                            Salida y llegada
+                        </h3>
+                        <p
+                            class="pt-3 text-center text-pretty text-white text-md"
+                        >
+                            De la mano de profesionales altamente capacitados
+                            que te <strong
+                                >guiaran en trámites de vuelo, búsqueda de
+                                alojamiento, trabajo, adaptación en el país
+                                escogido</strong
+                            > y todo lo que sea necesario para que tu viaje sea una
+                            <strong>experiencia inolvidable.</strong>
+                        </p>
+                    </div>
+                    <div class="w-1/3 h-full">
+                        <img
+                            src="5.jpg"
+                            alt="Segundo paso de como obtener visa estudiantil"
+                            class="object-cover w-full rounded-l h-full"
+                        />
+                    </div>
+
+                    <!-- Texto -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .bento1 {
+        background-image: url("roadtodream.jpg");
+    }
+    .bento5 {
+        background-image: url("8.jpg");
+    }
+
+    .backgroundCircle::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -15%;
+        width: 30%;
+        border-radius: 50%;
+        z-index: -1;
+        height: 100%;
+        background-color: rgb(53 83 20 / var(--tw-bg-opacity));
+    }
+    .backgroundCircle2::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -15%;
+        width: 30%;
+        border-radius: 50%;
+        z-index: -1;
+        height: 100%;
+        background-color: rgb(22 78 99);
+    }
+
+    .clic {
+        clip-path: polygon(
+            0 11%,
+            100% 0,
+            100% 30%,
+            100% 87%,
+            0 100%,
+            0 100%,
+            0% 30%
+        );
+    }
+</style>

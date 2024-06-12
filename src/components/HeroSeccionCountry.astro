@@ -1,0 +1,32 @@
+---
+interface Props {
+    title?: string;
+    src?: string;
+    sub: string;
+}
+
+const { title, src, sub } = Astro.props;
+---
+
+<div class="relative h-screen flex items-center justify-center">
+    <!-- Imagen de fondo con superposición degradada -->
+    <div
+        class="absolute inset-0 bg-gradient-to-b from-lime-900 to-transparent opacity-70"
+    >
+    </div>
+    <img src={src} alt="Imagen de fondo" class="w-full h-full object-cover" />
+
+    <!-- Contenido centrado -->
+    <div
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center z-10"
+    >
+        <h3 class="text-6xl font-bold mb-4">Estudiar en {title}</h3>
+        <p class="text-lg">{sub}</p>
+    </div>
+</div>
+
+<style>
+    h3 {
+        font-family: "Vujahday Script", cursive;
+    }
+</style>
