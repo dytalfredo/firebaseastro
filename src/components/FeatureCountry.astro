@@ -24,19 +24,25 @@ const { title, sub, sTitle1, sTitle2, sTitle3, text1, text2, text3 } =
         </p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="bg-white rounded-lg shadow-lg p-8">
-                <h2 class="text-xl font-bold text-gray-800 mb-4">{sTitle1}</h2>
+                <h2 class="text-xl font-bold text-gray-800 mb-4 tracking-wider">
+                    {sTitle1}
+                </h2>
                 <p class="text-gray-700">
                     {text1}
                 </p>
             </div>
             <div class="bg-white rounded-lg shadow-lg p-8">
-                <h2 class="text-xl font-bold text-gray-800 mb-4">{sTitle2}</h2>
+                <h2 class="text-xl font-bold text-gray-800 mb-4 tracking-wider">
+                    {sTitle2}
+                </h2>
                 <p class="text-gray-700">
                     {text2}
                 </p>
             </div>
             <div class="bg-white rounded-lg shadow-lg p-8">
-                <h2 class="text-xl font-bold text-gray-800 mb-4">{sTitle3}</h2>
+                <h2 class="text-xl font-bold text-gray-800 mb-4 tracking-wider">
+                    {sTitle3}
+                </h2>
                 <p class="text-gray-700">
                     {text3}
                 </p>
@@ -44,3 +50,8 @@ const { title, sub, sTitle1, sTitle2, sTitle3, text1, text2, text3 } =
         </div>
     </div>
 </div>
+<style>
+    h1 {
+        font-family: "Abril Fatface", system-ui;
+    }
+</style>

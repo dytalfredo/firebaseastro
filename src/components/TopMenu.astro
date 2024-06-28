@@ -1,6 +1,6 @@
 ---
 // Component Imports
-import "@fontsource/vujahday-script";
+import "@fontsource/abril-fatface";
 import { Icon } from "astro-icon/components";
 ---
 
@@ -11,7 +11,7 @@ import { Icon } from "astro-icon/components";
         <a href="/" class="flex items-center">
             <Icon name="Logo" class="text-4xl text-lime-900 mr-2" />
             <span
-                class="self-center text-3xl font-semibold text-lime-900 whitespace-nowrap logotext"
+                class="self-center text-xl font-semibold text-lime-900 whitespace-nowrap logotext tracking-wider max-md:text-xl"
                 >LatamStudyVisa</span
             >
         </a>
@@ -100,7 +100,9 @@ import { Icon } from "astro-icon/components";
 </nav>
 
 <style>
+    span {
+        font-family: "Abril Fatface", system-ui;
+    }
     .logotext {
-        font-family: "Vujahday Script", cursive;
     }
 </style>

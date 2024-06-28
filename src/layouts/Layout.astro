@@ -6,11 +6,12 @@ interface Props {
 }
 
 const { title } = Astro.props;
-import "@fontsource-variable/dm-sans";
-import "@fontsource-variable/playfair-display";
 
+import "@fontsource/lato";
+import "@fontsource/abril-fatface";
 import Footer from "../components/Footer.astro";
 import Adverten from "../components/Adverten.astro";
+import FormularioContacto from "../components/FormularioContacto.astro";
 ---
 
 <html lang="es">
@@ -24,8 +25,8 @@ import Adverten from "../components/Adverten.astro";
 		<meta name="viewport" content="width=device-width" />
 
 		<meta name="theme-color" content="#09f" />
-		<!-- <link rel="canonical" href="https://paletasdehelado.com" />
-		<link rel="robots" href="https://paletasdehelado.com/robots.txt" /> -->
+		<link rel="canonical" href="https://latamstudyvisa.com" />
+
 		<meta name="robots" content="noindex" />
 
 		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -72,6 +73,7 @@ import Adverten from "../components/Adverten.astro";
 		<Header />
 
 		<slot />
+		<FormularioContacto />
 		<Footer />
 	</body>
 </html>
@@ -146,7 +148,7 @@ import Adverten from "../components/Adverten.astro";
 		isolation: isolate;
 	}
 	html {
-		font-family: "DM Sans Variable", sans-serif;
+		font-family: "Lato", sans-serif;
 		background: var(--whiteBlue);
 		scroll-behavior: smooth;
 	}
@@ -167,9 +169,11 @@ import Adverten from "../components/Adverten.astro";
 	h2 {
 		color: var(--black);
 		font-size: 2rem;
-		font-family: "Playfair Display Variable", serif;
+		font-family: "Abril Fatface", system-ui;
+
 		text-align: center;
 	}
+
 	h1 {
 		font-size: 2rem;
 	}

@@ -3,27 +3,27 @@ import Numberstep from "./Numberstep.astro";
 import Buttons from "./Buttons.astro";
 ---
 
-<div class="relative pt-6">
+<div class="relative pt-6 view">
     <h2
-        class="mt-28 mb-4 text-5xl py-4 font-semibold text-lime-50 bg-lime-900 border-solid border-4 border-lime-900 capitalize"
+        class="mt-28 mb-4 text-4xl py-4 font-semibold text-lime-50 bg-lime-900 border-solid border-4 border-lime-900 capitalize tracking-widest"
     >
         Pasos para cumplir tus sueños
     </h2>
     <p class="text-xl text-gray-700 text-center max-w-2xl mx-auto">
         Conoce los 5 pasos a seguir para hacer realidad tus sueño de estudiar y
-        trabajar en el extrangero.
+        trabajar en el extranjero.
     </p>
 
     <div class="flex items-center justify-center mt-2 pt-10 pb-10">
         <div
-            class="grid h-full w-5/6 gap-2 p-2 grid-cols-3 grid-rows-3 rounded-lg shadow-md"
+            class="grid h-full w-5/6 gap-2 p-2 grid-cols-3 grid-rows-3 rounded-lg shadow-md max-md:grid-rows-1 max-md:grid-cols-1 max-md:w-full max-md:gap-x-0 max-md:px-0"
         >
             <div
-                class="relative col-span-1 bg-cover bg-center bento1 row-span-1 bg-pink-200 rounded-lg shadow-md p-4 overflow-hidden"
+                class="relative col-span-1 bg-cover bg-center bento1 row-span-1 bg-pink-200 animation rounded-lg shadow-md p-4 overflow-hidden"
             >
                 <Numberstep number="1" , preposition="er" />
                 <div
-                    class="backdrop-filter backdrop-blur-md bg-black/30 rounded p-4 shadow-lg"
+                    class="backdrop-brightness-50 backdrop-blur-sm bg-black/5 rounded p-4 shadow-lg"
                 >
                     <h3
                         class="font-bold text-pretty text-lime-50 text-2xl text-right pb-3"
@@ -31,8 +31,10 @@ import Buttons from "./Buttons.astro";
                         Mensaje inicial
                     </h3>
                     <p class="pt-3 text-center text-pretty text-white text-md">
-                        <strong>El primer paso es enviarnos un correo.</strong> Comparta
-                        con nosotros su destino de interés y, con gusto, <strong
+                        <strong
+                            >El primer paso en tu camino es enviarnos un correo.</strong
+                        > Comparte con nosotros su destino de interés y, con gusto,
+                        <strong
                             >nos comunicaremos para ofrecerle nuestra asistencia
                             personalizada sin costo alguno.</strong
                         >
@@ -42,12 +44,14 @@ import Buttons from "./Buttons.astro";
             </div>
 
             <div
-                class="col-span-2 relative bento2 row-span-1 bg-lime-900 rounded-lg shadow-md items-center justify-center p-4 overflow-hidden"
+                class="col-span-2 relative bento2 row-span-1 bg-lime-900 animationR rounded-lg shadow-md items-center justify-center p-4 overflow-hidden"
             >
                 <Numberstep number="2" , preposition="do" />
-                <div class="flex rounded shadow-lg h-full relative">
+                <div
+                    class="flex rounded shadow-lg h-full relative max-md:flex-col"
+                >
                     <!-- Imagen -->
-                    <div class="w-1/3 h-full">
+                    <div class="w-1/3 h-full max-md:w-full">
                         <img
                             src="2.jpg"
                             alt="Segundo paso de como obtener visa estudiantil"
@@ -56,7 +60,9 @@ import Buttons from "./Buttons.astro";
                     </div>
 
                     <!-- Texto -->
-                    <div class="w-2/3 p-4 backgroundCircle relative z-10">
+                    <div
+                        class="w-2/3 p-4 backgroundCircle relative z-10 max-md:w-full"
+                    >
                         <h3
                             class="font-bold text-pretty text-lime-50 text-2xl text-left pb-3"
                         >
@@ -79,31 +85,32 @@ import Buttons from "./Buttons.astro";
             </div>
 
             <div
-                class="col-span-2 relative bento3 row-span-1 bg-lime-900 rounded-lg shadow-md items-center justify-center p-4 overflow-hidden"
+                class="col-span-2 relative bento3 row-span-1 bg-lime-900 animation rounded-lg items-center justify-center p-4 overflow-hidden"
             >
                 <Numberstep number="3" , preposition="er" />
-                <div class="flex rounded shadow-lg h-full relative">
+                <div
+                    class="flex rounded shadow-lg h-full relative max-md:flex-col-reverse"
+                >
                     <!-- Imagen -->
-                    <div class="w-7/12 p-4 relative z-10">
+                    <div class="w-2/3 h-full max-md:w-full px-4">
                         <h3
                             class="font-bold text-pretty text-lime-50 text-2xl text-right pb-3"
                         >
-                            Seleccion de visa
+                            Aplicación a la visa
                         </h3>
                         <p
                             class="pt-3 text-center text-white text-md text-pretty"
                         >
-                            Nos comprometemos en <strong
-                                >facilitar el proceso de selección del visado</strong
-                            > más adecuado para tus aspiraciones. Nos ocuparemos
-                            de gestionar meticulosamente cada paso necesario, siempre
-                            al margen de la ley, <strong
+                            Nos comprometemos en ayudarte a obtener la visa de
+                            forma rapida y sencilla. Nos ocuparemos de gestionar
+                            meticulosamente cada paso necesario, siempre al
+                            margen de la ley, <strong
                                 >permitiéndote enfocarte en aspectos más
                                 placenteros de tu aventura.</strong
                             >
                         </p>
                     </div>
-                    <div class="w-5/12 h-full">
+                    <div class="w-5/12 h-full max-md:w-full">
                         <img
                             src="3.jpg"
                             alt="Segundo paso de como obtener visa estudiantil"
@@ -116,16 +123,16 @@ import Buttons from "./Buttons.astro";
             </div>
 
             <div
-                class="overflow-hidden col-span-1 relative row-span-2 bg-tan-200 rounded-lg shadow-md flex items-center justify-start bg-cover bg-center bento5 p-4"
+                class="overflow-hidden col-span-1 relative row-span-2 bg-tan-200 animationR rounded-lg shadow-md flex items-center justify-start bg-cover bg-center bento5 p-4"
             >
                 <Numberstep number="5" , preposition="o" />
                 <div
-                    class="backdrop-filter backdrop-blur-md bg-black/50 rounded p-4 shadow-lg"
+                    class="backdrop-brightness-50 backdrop-blur-sm bg-black/5 rounded p-4 shadow-lg"
                 >
                     <h3
                         class="font-bold text-pretty text-lime-50 text-2xl text-right pb-3"
                     >
-                        Juntos hasta el final
+                        Hasta el final
                     </h3>
                     <p class="pt-3 text-center text-pretty text-white text-md">
                         En Latam Study Visa entendemos que participar en un
@@ -142,12 +149,16 @@ import Buttons from "./Buttons.astro";
                 </div>
             </div>
             <div
-                class="col-span-2 relative bento4 row-span-1 bg-cyan-900 rounded-lg shadow-md items-center justify-center p-4 overflow-hidden"
+                class="col-span-2 relative bento4 row-span-1 bg-cyan-900 rounded-lg animation shadow-md items-center justify-center p-4 overflow-hidden"
             >
                 <Numberstep number="4" , preposition="o" />
-                <div class="flex rounded shadow-lg h-full relative">
+                <div
+                    class="flex rounded shadow-lg h-full relative max-md:flex-col-reverse"
+                >
                     <!-- Imagen -->
-                    <div class="w-2/3 p-4 relative z-10 backgroundCircle2">
+                    <div
+                        class="w-2/3 p-4 relative z-10 backgroundCircle2 max-md:w-full"
+                    >
                         <h3
                             class="font-bold text-pretty text-lime-50 text-2xl text-right pb-3"
                         >
@@ -165,7 +176,7 @@ import Buttons from "./Buttons.astro";
                             <strong>experiencia inolvidable.</strong>
                         </p>
                     </div>
-                    <div class="w-1/3 h-full">
+                    <div class="w-1/3 h-full max-md:w-full">
                         <img
                             src="5.jpg"
                             alt="Segundo paso de como obtener visa estudiantil"
@@ -186,6 +197,58 @@ import Buttons from "./Buttons.astro";
     }
     .bento5 {
         background-image: url("8.jpg");
+    }
+
+    h3,
+    h2 {
+        /* text-shadow: 3px 2px 5px #061b33; */
+
+        text-shadow:
+            1px 0px 1px #232325,
+            0px 1px 1px #232325,
+            2px 1px 1px #232325,
+            1px 2px 1px #232325,
+            3px 2px 1px #232325,
+            2px 3px 1px #232325,
+            4px 3px 1px #232325,
+            3px 4px 1px #232325,
+            5px 4px 1px #232325,
+            4px 5px 1px #232325,
+            6px 5px 1px #232325,
+            5px 6px 1px #232325,
+            7px 6px 1px #232325;
+    }
+
+    @keyframes anim {
+        from {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    @keyframes animR {
+        from {
+            opacity: 0;
+            transform: translateX(100px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .animation {
+        animation: anim linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+    .animationR {
+        animation: animR linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
     }
 
     .backgroundCircle::before {
