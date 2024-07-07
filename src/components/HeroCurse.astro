@@ -9,22 +9,20 @@ import "@fontsource/lato";
 const { title, src, sub } = Astro.props;
 ---
 
-<div class="relative h-screen flex items-center justify-center">
+<div
+    class="relative max-h-[400px] overflow-hidden flex items-center justify-center"
+>
     <!-- Imagen de fondo con superposición degradada -->
     <div
         class="absolute inset-0 bg-gradient-to-b from-lime-900 to-transparent opacity-70"
     >
     </div>
-    <img
-        src={src}
-        alt="Imagen de fondo"
-        class="w-full h-full object-cover bg-top"
-    />
+    <img src={src} alt="Imagen de fondo" class="w-full h-full object-cover" />
 
     <!-- Contenido centrado -->
     <div class="absolute transform text-white text-center z-10">
         <h3 class="text-6xl font-bold mb-4 tracking-widest">
-            Estudiar en {title}
+            {title}
         </h3>
         <p class="text-lg">{sub}</p>
     </div>

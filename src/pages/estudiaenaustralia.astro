@@ -5,11 +5,12 @@ import CallToActionCountrys from "../components/CallToActionCountrys.astro";
 
 import FeatureCountry from "../components/FeatureCountry.astro";
 import HeroSeccionCountry from "../components/HeroSeccionCountry.astro";
+import FormularioContacto from "../components/FormularioContacto.astro";
 
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Estudia y trabaja en Nueva Zelanda desde Argentina">
+<Layout title="Estudia y trabaja en Australia desde Argentina">
     <main class="bg-white">
         <HeroSeccionCountry
             src="/australiastudy.jpg"
@@ -33,6 +34,8 @@ import Layout from "../layouts/Layout.astro";
             ,
             text3="Australia permite trabajar mientras estudias, lo que brinda una experiencia completa. Además, su entorno natural espectacular te invita a explorar y vivir aventuras únicas."
         />
-        <CallToActionCountrys />
+        <FormularioContacto
+            title="¿Quieres Estudiar y trabajar en Australia?"
+        />
     </main>
 </Layout>

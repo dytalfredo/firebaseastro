@@ -2,17 +2,14 @@
 // Component Imports
 
 import "@fontsource/lato";
+import TextoAnimate from "./TextoAnimate.astro";
 ---
 
 <div class="relative">
     <div
         class="bg-cover bg-center pb-5 hero text-white text-center max-md:h-full max-md:bg-top"
     >
-        <h1
-            class="text-4xl font-normal pt-10 tracking-wider leading-snug capitalize"
-        >
-            Tus sueños de <span class="text-4xl leading-7">Estudios</span> esperan
-        </h1>
+        <TextoAnimate />
         <p
             class="text-white font-semibold text-base text-center max-w-xl mx-auto mt-4"
         >
@@ -37,8 +34,9 @@ import "@fontsource/lato";
 
     h1 {
         font-family: "Abril Fatface", system-ui;
-        text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+        text-shadow: 4px 4px 2px rgba(4, 39, 20, 0.6);
     }
+
     span {
         font-family: "Abril Fatface", system-ui;
         text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);

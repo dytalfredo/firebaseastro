@@ -1,3 +1,11 @@
+---
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+
 <div
     class="flex min-h-screen max-w-2xl mx-auto bg-white mt-10"
     id="formularioContacto"
@@ -6,7 +14,7 @@
         <h2
             class="font-semibold text-4xl capitalize text-gray-800 leading-[3rem]"
         >
-            ¿Quieres trabajar y estudiar en el extranjero?
+            {title}
         </h2>
         <p class="text-xl text-gray-700 text-center mt-6">
             ¡Estamos listos para ayudarte a conseguirlo!. Rellena y envia el
@@ -64,7 +72,7 @@
             </div>
 
             <button
-                type="submit"
+                id="button"
                 class="text-sm block mt-4 font-semibold py-1 px-8 text-lime-50 bg-lime-900 mx-auto hover:text-lime-900 hover:bg-lime-500 border-solid border-2 border-lime-900 rounded-full shadow hover:shadow-md transition duration-300"
                 >Enviar Mensaje</button
             >
@@ -76,6 +84,33 @@
                 name="_next"
                 value="https://latamstudyvisa.com/envioexitoso"
             />
+            <script>
+                const miFormulario =
+                    document.getElementById("formularioContacto");
+                const botonCambiarAccion = document.getElementById("button");
+
+                botonCambiarAccion.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    console.log("Hola alfredo");
+                    console.log(miFormulario.getAttribute("action"));
+                    miFormulario.setAttribute("action", "www.facebook.com"); // Cambia la URL según tus necesidades
+                });
+                /*  import { generateRandomNumber } from "../utils/utils.js";
+                function handleFormSubmit(event) {
+                    event.preventDefault();
+                    const NumeroAleatorio = generateRandomNumber();
+                    console.log(NumeroAleatorio);
+                    const Formulario =
+                        document.getElementById("formularioContacto");
+                    Formulario.action = "www.facebook.com"; */
+                // Envía el formulario a la URL dinámica
+                // (por ejemplo, /procesar/12345)
+                // ...
+
+                /*  document
+                    .getElementById("button")
+                    .addEventListener("click", handleFormSubmit); */
+            </script>
         </form>
     </div>
 </div>

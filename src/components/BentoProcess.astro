@@ -1,11 +1,12 @@
 ---
 import Numberstep from "./Numberstep.astro";
 import Buttons from "./Buttons.astro";
+import "@fontsource/abril-fatface";
 ---
 
 <div class="relative pt-6 view">
     <h2
-        class="mt-28 mb-4 text-4xl py-4 font-semibold text-lime-50 bg-lime-900 border-solid border-4 border-lime-900 capitalize tracking-widest"
+        class="mt-28 mb-4 text-4xl py-4 font-semibold text-white bg-lime-900 border-solid border-4 border-lime-900 capitalize tracking-widest"
     >
         Pasos para cumplir tus sueños
     </h2>
@@ -201,9 +202,12 @@ import Buttons from "./Buttons.astro";
 
     h3,
     h2 {
+        font-family: "Abril Fatface", system-ui;
+        letter-spacing: 0.2rem;
+        color: white;
         /* text-shadow: 3px 2px 5px #061b33; */
 
-        text-shadow:
+        /* text-shadow:
             1px 0px 1px #232325,
             0px 1px 1px #232325,
             2px 1px 1px #232325,
@@ -216,7 +220,7 @@ import Buttons from "./Buttons.astro";
             4px 5px 1px #232325,
             6px 5px 1px #232325,
             5px 6px 1px #232325,
-            7px 6px 1px #232325;
+            7px 6px 1px #232325;*/
     }
 
     @keyframes anim {
