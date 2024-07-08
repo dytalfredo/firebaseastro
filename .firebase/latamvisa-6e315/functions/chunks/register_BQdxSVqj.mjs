@@ -7,9 +7,11 @@ const POST = async ({ request, redirect }) => {
   const email = formData.get("email")?.toString();
   const password = formData.get("password")?.toString();
   const name = formData.get("name")?.toString();
+  console.log("NO SE QUE ESTA PASANDO");
+  console.log(email);
   if (!email || !password || !name) {
     return new Response(
-      "Missing form data",
+      `Missing form data CUlo2323 ${email} ${password} ${name}`,
       { status: 400 }
     );
   }
