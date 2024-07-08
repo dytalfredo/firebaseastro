@@ -13,7 +13,7 @@ export const POST: APIRoute = async ({ request, redirect }) => {
 
   if (!email || !password || !name) {
     return new Response(
-      "Missing form data",
+      "Missing form data CUlo",
       { status: 400 }
     );
   }
