@@ -1,4 +1,6 @@
 ---
+import Input from "../components/Input.astro";
+import Button from "../components/Button.astro";
 interface Props {
     title: string;
 }
@@ -22,39 +24,34 @@ const { title } = Astro.props;
             horas.
         </p>
 
-        <form
-            method="POST"
-            action="https://formsubmit.co/5f8ff96f196b4c185ae624fa43dab3ac"
-            class="mt-10"
-            id="formularioContacto"
-        >
+        <form class="mt-10" id="create-account">
             <input type="text" name="_honey" style="display:none;" />
 
             <div class="grid gap-6 sm:grid-cols-2">
                 <div class="relative z-0">
                     <input
-                        type="text"
-                        name="Nombre"
+                        type="email"
+                        name="email"
                         class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-xl text-gray-900 focus:border-lime-900 focus:outline-none focus:ring-0"
                         placeholder=" "
                         required
                     />
                     <label
                         class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-xl text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-lime-900/30 peer-focus:dark:text-lime-900/20"
-                        >Nombre</label
+                        >Correo</label
                     >
                 </div>
                 <div class="relative z-0">
                     <input
-                        type="email"
-                        name="Correo"
+                        type="password"
+                        name="password"
                         class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-xl text-gray-900 focus:border-lime-900 focus:outline-none focus:ring-0"
                         placeholder=" "
                         required
                     />
                     <label
                         class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-xl text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-lime-900/20 peer-focus:dark:lime-900/20"
-                        >Correo</label
+                        >Contraseña</label
                     >
                 </div>
                 <div class="relative z-0 col-span-2">
@@ -84,33 +81,16 @@ const { title } = Astro.props;
                 name="_next"
                 value="https://latamstudyvisa.com/envioexitoso"
             />
-            <script>
-                const miFormulario =
-                    document.getElementById("formularioContacto");
-                const botonCambiarAccion = document.getElementById("button");
-
-                botonCambiarAccion.addEventListener("click", (e) => {
+            <!--             <script>
+                import { actions } from "astro:actions";
+                const createForm = document.querySelector(
+                    "#create-account",
+                ) as HTMLFormElement;
+                createForm.addEventListener("submit", async (e) => {
                     e.preventDefault();
-                    console.log("Hola alfredo");
-                    console.log(miFormulario.getAttribute("action"));
-                    miFormulario.setAttribute("action", "www.facebook.com"); // Cambia la URL según tus necesidades
+                    await actions.createAccount(new FormData(createForm));
                 });
-                /*  import { generateRandomNumber } from "../utils/utils.js";
-                function handleFormSubmit(event) {
-                    event.preventDefault();
-                    const NumeroAleatorio = generateRandomNumber();
-                    console.log(NumeroAleatorio);
-                    const Formulario =
-                        document.getElementById("formularioContacto");
-                    Formulario.action = "www.facebook.com"; */
-                // Envía el formulario a la URL dinámica
-                // (por ejemplo, /procesar/12345)
-                // ...
-
-                /*  document
-                    .getElementById("button")
-                    .addEventListener("click", handleFormSubmit); */
-            </script>
+            </script> -->
         </form>
     </div>
 </div>
